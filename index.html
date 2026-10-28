@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mukhtar Chiffon House</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+          <div class="logo-container">
+            <h1>Mukhtar Chiffon House</h1>
+            <img src="image/Mch.png" alt="MCH logo" class="logo">
+          </div>
+             <!-- Right-side icons -->
+    <div class="header-icons">
+      <!-- Search bar -->
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+
+      <!-- Login button -->
+      <button onclick="showLogin()">Login</button>
+
+      <!-- Cart button -->
+      <button onclick="viewCart()">🛒 Cart</button>
+    </div>
+  
+     </header>
+     <nav>
+  <ul>
+    <li><a href="#" onclick="loadCategory('LAWN')">Lawn</a></li>
+    <li><a href="#" onclick="loadCategory('CHIFFON')">Chiffon</a></li>
+    <li><a href="#" onclick="loadCategory('VELVET')">Velvet</a></li>
+    <li><a href="#" onclick="loadCategory('READY TO WEAR')">Ready to Wear</a></li>
+  </ul>
+</nav>
+     <section id="products"></section>
+     <!-- ✅ Login form (hidden by default) -->
+  <section id="loginSection" class="hidden">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="loginUser()">Submit</button>
+    <button onclick="hideLogin()">Cancel</button>
+  </section>
+
+  <!-- ✅ Cart section (hidden by default) -->
+  <section id="cartSection" class="hidden"></section>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
